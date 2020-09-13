@@ -115,7 +115,14 @@ namespace TpCalculadora
         public static double operator /(Numero num1, Numero num2)
         {
             double resultado;
-            resultado = num1.numero / num2.numero;
+            if(num2.numero == 0)
+            {
+                resultado = double.MinValue;
+            }
+            else
+            {
+                resultado = num1.numero / num2.numero;
+            }
             return resultado;
         }
     }

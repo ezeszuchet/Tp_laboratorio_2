@@ -20,16 +20,22 @@ namespace TpCalculadora
 
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
-
+            cmbOperador.SelectedIndex = 0;
         }
 
-        private void btnOperar_Click(object sender, EventArgs e)
+        private static Double Operar(string numero1, string numero2, string operador)
         {
-            Numero num1 = new Numero(this.txtNumero1.Text);
-            Numero num2 = new Numero(this.txtNumero2.Text);
+            Numero num1 = new Numero(numero1);
+            Numero num2 = new Numero(numero2);
             double resultado;
 
-            resultado = Calculadora.Operar(num1, num2, cmbOperador.Text);
+            resultado = Calculadora.Operar(num1, num2, operador);
+
+            return resultado;
+        }
+        private void btnOperar_Click(object sender, EventArgs e)
+        {   
+            double resultado = FormCalculadora.Operar(this.txtNumero1.Text, this.txtNumero2.Text, cmbOperador.Text);
 
             this.lblResultado.Text = resultado.ToString();
         }
@@ -39,12 +45,16 @@ namespace TpCalculadora
 
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        public void Limpiar()
         {
             this.txtNumero1.Clear();
             this.txtNumero2.Clear();
             this.cmbOperador.ResetText();
             this.lblResultado.Text = "Resultado";
+        }
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

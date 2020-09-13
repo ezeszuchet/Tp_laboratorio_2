@@ -47,14 +47,14 @@
             this.txtNumero1.Location = new System.Drawing.Point(35, 93);
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(100, 20);
-            this.txtNumero1.TabIndex = 0;
+            this.txtNumero1.TabIndex = 1;
             // 
             // txtNumero2
             // 
             this.txtNumero2.Location = new System.Drawing.Point(337, 93);
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(100, 20);
-            this.txtNumero2.TabIndex = 2;
+            this.txtNumero2.TabIndex = 3;
             // 
             // lblResultado
             // 
@@ -62,7 +62,7 @@
             this.lblResultado.Location = new System.Drawing.Point(382, 39);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(55, 13);
-            this.lblResultado.TabIndex = 3;
+            this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "Resultado";
             // 
             // btnOperar
@@ -70,7 +70,7 @@
             this.btnOperar.Location = new System.Drawing.Point(35, 160);
             this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(88, 33);
-            this.btnOperar.TabIndex = 4;
+            this.btnOperar.TabIndex = 5;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = true;
             this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
@@ -80,7 +80,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(198, 160);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(79, 33);
-            this.btnLimpiar.TabIndex = 5;
+            this.btnLimpiar.TabIndex = 6;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -90,7 +90,7 @@
             this.btnCerrar.Location = new System.Drawing.Point(362, 160);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(75, 33);
-            this.btnCerrar.TabIndex = 6;
+            this.btnCerrar.TabIndex = 7;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -100,7 +100,7 @@
             this.btnConvertirABinario.Location = new System.Drawing.Point(103, 214);
             this.btnConvertirABinario.Name = "btnConvertirABinario";
             this.btnConvertirABinario.Size = new System.Drawing.Size(109, 29);
-            this.btnConvertirABinario.TabIndex = 7;
+            this.btnConvertirABinario.TabIndex = 8;
             this.btnConvertirABinario.Text = "Convertir a binario";
             this.btnConvertirABinario.UseVisualStyleBackColor = true;
             this.btnConvertirABinario.Click += new System.EventHandler(this.btnConvertirABinario_Click);
@@ -110,13 +110,14 @@
             this.btnConvertirADecimal.Location = new System.Drawing.Point(262, 214);
             this.btnConvertirADecimal.Name = "btnConvertirADecimal";
             this.btnConvertirADecimal.Size = new System.Drawing.Size(110, 29);
-            this.btnConvertirADecimal.TabIndex = 8;
+            this.btnConvertirADecimal.TabIndex = 9;
             this.btnConvertirADecimal.Text = "Convertir a decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
             this.btnConvertirADecimal.Click += new System.EventHandler(this.btnConvertirADecimal_Click);
             // 
             // cmbOperador
             // 
+            this.cmbOperador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOperador.FormattingEnabled = true;
             this.cmbOperador.Items.AddRange(new object[] {
             "+",
@@ -126,7 +127,7 @@
             this.cmbOperador.Location = new System.Drawing.Point(171, 93);
             this.cmbOperador.Name = "cmbOperador";
             this.cmbOperador.Size = new System.Drawing.Size(121, 21);
-            this.cmbOperador.TabIndex = 9;
+            this.cmbOperador.TabIndex = 2;
             this.cmbOperador.SelectedIndexChanged += new System.EventHandler(this.cmbOperador_SelectedIndexChanged);
             // 
             // label1
@@ -144,16 +145,16 @@
             this.label2.Location = new System.Drawing.Point(334, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
-            this.label2.TabIndex = 11;
+            this.label2.TabIndex = 12;
             this.label2.Text = "Ingrese un número";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(171, 66);
+            this.label3.Location = new System.Drawing.Point(168, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 12;
+            this.label3.TabIndex = 11;
             this.label3.Text = "Operación";
             // 
             // FormCalculadora
